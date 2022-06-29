@@ -1,0 +1,92 @@
+#AboutMe{
+    background: url("../Images/aboutMeBG.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#AboutMe img{
+    width: 45vh;
+    border: black 4px solid;
+    box-shadow: rgba(69,103,113,0.8) 20px 20px 0;
+    transition: 1s;
+}
+#abouttext{
+    text-align: left;
+    color: white;
+    width: 50%;
+    text-shadow: 2px 2px black;
+
+}
+#abouttext h1{
+    font-family: "Arial Black",sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+#abouttext p{
+    font-family: "Arial",sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 1s;
+}
+@media(max-width: 1200px)
+{
+    #AboutMe img{
+        width: 40vh;
+        border: black 4px solid;
+        box-shadow: rgba(69,103,113,0.8) 15px 15px 0;
+        transition: 1s;
+    }
+}
+@media(max-width: 1000px)
+{
+    #abouttext p{
+        font-family: "Arial",sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 1s;
+    }
+    #abouttext h1{
+        font-family: "Arial Black",sans-serif;
+        font-weight: bolder;
+        font-size: 26px;
+        margin-bottom: 25px;
+        transition: 1s;
+    }
+    #AboutMe img{
+        width: 35vh;
+        border: black 4px solid;
+        box-shadow: rgba(69,103,113,0.8) 15px 15px 0;
+        transition: 1s;
+    }
+}
+@media(max-width: 800px)
+{
+    #AboutMe img{
+        width: 40vh;
+        border: black 4px solid;
+        box-shadow: rgba(69,103,113,0.8) 15px 15px 0;
+        margin-top: 40px;
+        transition: 1s;
+    }
+    #AboutMe{
+        justify-content: center;
+        flex-direction: column;
+    }
+    #abouttext{
+        text-align: center;
+        color: white;
+        width: 90%;
+        text-shadow: 2px 2px black;
+        margin-top: 70px;
+
+    }
+}
+
+

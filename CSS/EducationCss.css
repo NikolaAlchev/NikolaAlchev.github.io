@@ -1,0 +1,207 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../Images/educationBG.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+#container div
+{
+    display: flex;
+    background-color: rgba(255,255,255,0.95);
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border: 1px black solid;
+    width: 315px;
+    height: 62vh;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 15px 0;
+    transition: 0.5s;
+
+}
+#container div:hover{
+    background-color: white;
+    transition: 0.5s;
+    padding: 2% 1%;
+}
+
+#container img
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+@media(max-width: 1100px)
+{
+    #container img
+    {
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+
+    }
+    #container div
+    {
+        width: 250px;
+        height: 58vh;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+    #container div p
+    {
+        width: 150px;
+        height: 50vh;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+    #container div p:last-child
+    {
+        font-size: 13px;
+
+    }
+    #Education hr{
+        width: 50%;
+        margin-top: 5px;
+        border: none;
+        height: 2px;
+        background-color: #000000;
+    }
+
+}
+@media(max-width: 800px)
+{
+    #container img
+    {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+
+    }
+    #container div
+    {
+        width: 200px;
+        height: 50vh;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+    #container div p
+    {
+        width: 150px;
+        height: 50vh;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+    #container div h1
+    {
+        font-size: 20px;
+    }
+    #container div p:last-child
+    {
+        font-size: 13px;
+
+    }
+    #Education hr{
+        width: 50%;
+        border: none;
+        height: 2px;
+        background-color: #000000;
+    }
+
+}
+
+@media(max-width: 700px)
+{
+    #container img
+    {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+
+    }
+    #container div
+    {
+        width: 30%;
+        height: 47vh;
+        margin-left: 1%;
+        margin-right: 1%;
+
+    }
+    .schoolname
+    {
+
+        margin-left: 25px;
+        margin-right: 25px;
+
+
+    }
+    #container .schoolname{
+        font-size: 10px;
+    }
+
+    #container div h1
+    {
+        font-size: 18px;
+        padding-top: 0;
+    }
+    #container div p:last-child
+    {
+        width: 80%;
+        font-size: 11px;
+
+    }
+    #Education hr{
+        width: 50%;
+        border: none;
+        height: 2px;
+        background-color: #000000;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+.schoolname{
+
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+    transition: 1s;
+    height: 20px;
+}
+#Education h1{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    transition: 1s;
+}
+#Education span{
+    color: #ff4726;
+}
+#Education hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    transition: 1s;
+}
+#Education div p:last-child
+{
+    margin: 10px 30px 20px 30px;
+    text-align: justify;
+}
+
+
+
+

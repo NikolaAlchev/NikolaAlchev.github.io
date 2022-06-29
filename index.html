@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikola Alchev</title>
+    <link rel="stylesheet" href="CSS/IndexCss.css">
+    <link rel="stylesheet" href="CSS/AboutMeCss.css">
+    <link rel="stylesheet" href="CSS/EducationCss.css">
+    <link rel="stylesheet" href="CSS/HobbyCss.css">
+    <link rel="stylesheet" href="CSS/ContactCss.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <script>
+
+        function Disappear() {
+            const dis = document.getElementById("list");
+            const t = document.getElementById("toggle");
+            const t1 = document.getElementById("toggle1");
+            t.style.display="grid";
+            t1.style.display="none";
+            dis.style.display="none";
+            dis.style.width="0";
+            dis.style.height="0";
+        }
+        function Appear() {
+            const app = document.getElementById("list");
+            const t = document.getElementById("toggle");
+            const t1 = document.getElementById("toggle1");
+            t.style.display="none";
+            t1.style.display="grid";
+            app.style.display="block";
+            app.style.width="100%";
+            app.style.height="100vh";
+        }
+    </script>
+
+
+</head>
+<body>
+
+<header>
+    <a id="gif" href="index.html">
+        <img src="Images/logo.gif" alt="Nikola">
+    </a>
+
+    <ul id="ulnav">
+        <li><a class="navigation" href="#Home">Home</a></li>
+        <li><a class="navigation" href="#AboutMe">About Me</a></li>
+        <li><a class="navigation" href="#Education">Education</a></li>
+        <li><a class="navigation" href="#Hobby">Hobby</a></li>
+        <li style="margin-right: 100px;"><a class="navigation" href="#Contact">Contact</a></li>
+    </ul>
+    <div id="hamburger">
+        <button id="toggle" onclick="Appear()"><i class="fa-solid fa-2x fa-bars fa-color"></i></button>
+        <button id="toggle1" onclick="Disappear()"><i class="fa-solid fa-2x fa-bars fa-color"></i></button>
+        <nav id="list">
+            <ul>
+                <li><a href="#Home" onclick="Disappear()">Home</a></li>
+                <li><a href="#AboutMe" onclick="Disappear()">About Me</a></li>
+                <li><a href="#Education" onclick="Disappear()">Education</a></li>
+                <li><a href="#Hobby" onclick="Disappear()">Hobby</a></li>
+                <li><a href="#Contact" onclick="Disappear()">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<section id="Home">
+    <div id="hometext">
+        <div id="darkbg">
+            <h1>I'm <span>Nikola</span> Alchev </h1>
+            <h2>Welcome to my website</h2>
+        </div>
+    </div>
+</section>
+<section id="AboutMe">
+    <div id="abouttext">
+        <h1>About Me</h1>
+        <p>I am an enthusiastic, hardworking student who is always eager to learn something new.</p>
+    </div>
+    <img src="Images/nikolaAlchev.jpg" alt="Nikola Alchev photo">
+</section>
+
+<section id="Education">
+    <div id="container">
+        <div>
+            <a href="https://oouhtkarpos.edu.mk/" target="_blank"><img src="Images/karposh.png" alt="Elementary School HTK logo"/></a>
+            <br>
+            <h1><span>Primary</span> School</h1>
+            <p class="schoolname">Primary School Hristijan Todorovski - Karpoš</p>
+            <hr>
+            <p>I spent the first years of my education at the H.T.K. primary school where in the ninth grade I was elected as the best student in the generation.</p>
+
+        </div>
+        <div>
+            <a href="https://orcenikolov.edu.mk/" target="_blank"><img src="Images/orce.png" alt="High School Orce Nikolov logo"/></a>
+            <br>
+            <h1><span>High</span> School</h1>
+            <p class="schoolname">High school Orce Nikolov</p>
+            <hr>
+            <p>I spent the next four years in the Orce Nikolov high school where despite the two years lost due to Covid 19, were the best years of my education</p>
+
+
+        </div>
+        <div>
+            <a href="https://www.finki.ukim.mk/mk" target="_blank"><img src="Images/finki.png" alt="FINKI logo"/></a>
+            <br>
+            <h1><span>Faculty</span></h1>
+            <p class="schoolname">Faculty of Computer Science & Engineering</p>
+            <hr>
+            <p>I am currently studying at the Faculty of Computer Science and Engineering (SEIS department) where I hope to one day become a successful software engineer.</p>
+
+        </div>
+    </div>
+</section>
+
+<section id="Hobby">
+    <div style="margin-right: 50px">
+        <h1>My <span>Hobbies</span></h1>
+        <br/>
+        <p><span>Chess</span>. One of my biggest hobbies is playing chess and solving mind games and puzzles. I enjoy playing chess because it is a game with endless possibilities, requires me to think and think ahead, but most importantly, it is a great way to keep my brain in shape. </p>
+        <br/>
+        <p><span>Musical instruments</span>. Whenever I have the time, I try to learn to play a new composition on the piano or the guitar.</p>
+    </div>
+    <a href="https://www.chess.com/play/online" target="_blank"><img src="Images/chess.gif" alt="Chess gif"/></a>
+
+</section>
+
+<section id="Contact">
+
+    <form id="background" action="index.html">
+        <div id="position">
+            <br>
+            <h1><span>Contact</span> Me</h1>
+            <br>
+            <div id="containerContact">
+                <div style="margin-left: 20px">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder=" Enter your name" required>
+                </div>
+
+                <div style="margin-right: 20px;">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" id="email" placeholder=" Enter your email" required>
+                </div>
+            </div>
+
+            <br>
+            <div class="message">
+                <label for="message" style="margin-left: 20px;">Message:</label>
+                <textarea id="message" rows="4" cols="50" placeholder=" Enter your message" required></textarea>
+            </div>
+            <div id="button">
+                <a href="#Contact"><button type="submit">Submit</button></a>
+            </div>
+
+
+        </div>
+    </form>
+</section>
+</body>
+</html>
